@@ -23,65 +23,26 @@ export default function About() {
         },"as")
         tl.from('.About > div',{
             opacity : 0,
-            scale : 0
+            scale : 0,
+            duration : 0.4
         },"as")
 
         tl.from('.left',{
-            duration : 1,
+            duration : 0.6,
             opacity : 0,
             x : -200,
         },"same")
         tl.from('.right',{
-            duration : 1,
+            duration : 0.6,
             opacity : 0,
             x : 200,
         },"same")
-        // const tl = gsap.timeline({
-        //     scrollTrigger: {
-        //         trigger: '.About',
-        //         start: 'top 0%',
-        //         // end: 'top -100%',
-        //         scrub: true,
-        //         markers: true,
-        //         // pin : true // Remove this line in production
-        //     },
-        // });
-
-        // tl.from('.bg-white', {
-        //     opacity: 0,
-        //     y: 50,
-        //     // scale : 1,
-        //     duration: 1,
-        // }).from('.bg-white img', {
-        //     opacity: 0,
-        //     x: -50,
-        //     duration: 0.8,
-        // }).from('.ani-h1, .ani-p', {
-        //     opacity: 0,
-        //     y: 20,
-        //     stagger: 0.2,
-        //     duration: 0.5,
-        // });
-
-
-        // gsap.to(".About > div", {
-        //     scale : 1.7,
-        //     scrollTrigger : {
-        //         trigger : ".About",
-        //         scroller : "body",
-        //         scrub : 1,
-        //         pin : true,
-        //         start : "top 0%",
-        //         end : "top -100%",
-        //         marker : true
-        //     }
-        // })
         
     },[]);
 
     return (
         <div className="About p-4 h-screen w-full bg-gray-100 text-gray-800 flex flex-col items-center justify-center overflow-hidden">
-            <h1 className='text-4xl px-6 font-semibold w-full underline'>About</h1>
+            <h2 className='text-5xl font-bold mb-6 tracking-wide text-left w-full px-6 text-gray-900'>About</h2>
             <div className="bg-white w-4/5 h-5/6 m-auto p-10 flex justify-between items-center rounded-lg shadow-lg">
                 <img
                     className="left w-1/3 object-cover h-full rounded-lg shadow-md"
