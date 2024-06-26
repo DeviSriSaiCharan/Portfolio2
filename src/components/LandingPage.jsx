@@ -9,12 +9,12 @@ export default function LandingPage() {
 
     useGSAP(() =>{
         const tl = gsap.timeline();
-        tl.from('h1',{
+        tl.from('.details h1',{
             opacity : 0,
             y : 20,
-            delay : 2
+            delay : 1
         })
-        tl.from('p',{
+        tl.from('.details p',{
             opacity : 0,
             y : 10
         })
@@ -29,9 +29,9 @@ export default function LandingPage() {
             </div>
             <div className="relative z-10 w-full h-full">
                 <NavBar />
-                <div className='top-[45%] w-full text-center absolute'>
-                    <h1 className='text-7xl'>Devi Sri Sai Charan</h1><br/>
-                    <p>Web Developer and 3rd Year Undergraduate at SRM University, Andhra Pradesh.</p>
+                <div className='details top-[45%] w-full text-center absolute'>
+                    <h1 className='alt text-7xl'>Devi Sri Sai Charan</h1><br/>
+                    <p className='alt'>Web Developer and 3rd Year Undergraduate at SRM University, Andhra Pradesh.</p>
                 </div>
                 <RiArrowDownWideLine className='absolute bottom-2 animate-bounce left-1/2'/>
             </div>
@@ -42,19 +42,14 @@ export default function LandingPage() {
 function NavBar() {
     
     useGSAP(() =>{
-        const tl = gsap.timeline();
 
-        tl.from('nav div img',{
+        gsap.from('nav div img, nav div ol li',{
             opacity : 0,
             y : -20,
-            delay : 0.5
+            delay : 0.5,
+            stagger : 0.1
         })
 
-        tl.from('nav div ol li',{
-            opacity : 0,
-            y : -20,
-            stagger : 0.3
-        })
     })
 
     return (
@@ -63,7 +58,7 @@ function NavBar() {
                 <img src={Logo} className="scale-150" alt="Logo" />
             </div>
             <div>
-                <ol className="flex gap-10">
+                <ol className="flex gap-10 alt text-sm">
                     <li className="hover:underline rounded-3xl">Home</li>
                     <li className="hover:underline rounded-3xl">About</li>
                     <li className="hover:underline rounded-3xl">Contact</li>

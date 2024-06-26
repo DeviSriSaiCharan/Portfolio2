@@ -5,7 +5,12 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily : {
+        'name' : ['"Playwrite ES Deco"', 'cursive'],
+        'alt' : ['"Playwrite NG Modern"', 'cursive'],
+      }
+    },
   },
   plugins: [],
 }

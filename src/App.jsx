@@ -32,6 +32,7 @@ function App() {
       {/* <div className="cursor rounded-full bg-black w-4 h-4 fixed z-20"></div> */}
       <LandingPage/>
       <About/>
+      <div className='h-screen bg-white'></div>
     </>
   )
 }
