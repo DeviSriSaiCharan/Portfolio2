@@ -4,6 +4,8 @@ import {useEffect} from 'react'
 import './App.css'
 import LandingPage from './components/LandingPage'
 import About from './components/About'
+import Project from './components/Project'
+import Skills from './components/Skills'
 
 function App() {
   
@@ -32,6 +34,8 @@ function App() {
       {/* <div className="cursor rounded-full bg-black w-4 h-4 fixed z-20"></div> */}
       <LandingPage/>
       <About/>
+      {/* <Project/> */}
+      <Skills/>
       <div className='h-screen bg-white'></div>
     </>
   )
