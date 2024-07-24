@@ -32,12 +32,12 @@ export default function Skills(){
 
     }, [])
 
-    const mySkills = ['html5', 'css3', 'js', 'reactjs', 'tailwindcss', 'nodejs', 'mongodb', 'prisma', 'postgresql', 'shadcnui', 'c++', 'python', 'typescript', 'mysql', 'redis', 'git', 'github']
+    const mySkills = ['html5', 'css3', 'js', 'reactjs', 'tailwindcss', 'nodejs', 'prisma', 'postgresql', 'shadcnui', 'c++', 'python', 'typescript', 'mysql', 'git', 'github']
 
     return (
         <div id="Skills" className="Skills p-4  w-full bg-[#F8F0EC] text-gray-800 flex flex-col items-center justify-center overflow-hidden">
             <div className="w-4/5 h-5/6 m-auto p-10  rounded-lg">
-                <h2 className='text-5xl font-semibold mb-20 tracking-wide text-center w-full px-6 text-gray-900'>My Skills</h2>
+                <h2 className='alt underline decoration-2 underline-offset-4 decoration-wavy text-5xl font-semibold mb-20 tracking-wide text-center w-full px-6 text-gray-900'>My Skills</h2>
                 <div className="flex gap-20 flex-wrap w-5/6 m-auto justify-center">
                     {mySkills.map((skill) => <SkillCard key={skill} tech={skill}/>)}
                 </div>

@@ -15,8 +15,20 @@
 
 
 .alt {
-  font-family: "Playwrite NG Modern", cursive;
+  font-family: "Playwrite NG Modern", cursive !important;
   font-optical-sizing: auto;
   font-weight: 300;
   font-style: normal;
+}
+
+/* For Chrome, Safari, Edge, and other WebKit-based browsers */
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 30px #F8F0EC inset !important; /* Use your input's background color */
+  -webkit-text-fill-color: black !important; /* Use your input's text color */
+}
+
+/* For Firefox */
+input:-moz-autofill {
+  box-shadow: 0 0 0 30px #F8F0EC inset !important; /* Use your input's background color */
+  -moz-text-fill-color: black !important; /* Use your input's text color */
 }
