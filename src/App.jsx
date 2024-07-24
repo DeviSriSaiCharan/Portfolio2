@@ -1,6 +1,4 @@
-import { useGSAP } from '@gsap/react'
-import  gsap from 'gsap'
-import {useEffect} from 'react'
+import { Analytics } from "@vercel/analytics/react"
 import './App.css'
 import LandingPage from './components/LandingPage'
 import About from './components/About'
@@ -32,12 +30,14 @@ function App() {
 
   return (
     <>
+    <Analytics>
       {/* <div className="cursor rounded-full bg-black w-4 h-4 fixed z-20"></div> */}
       <LandingPage/>
       <About/>
       <Skills/>
       <Project/>
       <Contact />
+    </Analytics>
     </>
   )
 }
