@@ -30,14 +30,14 @@ function App() {
 
   return (
     <>
-    <Analytics>
+
       {/* <div className="cursor rounded-full bg-black w-4 h-4 fixed z-20"></div> */}
       <LandingPage/>
       <About/>
       <Skills/>
       <Project/>
       <Contact />
-    </Analytics>
+    <Analytics/>
     </>
   )
 }
